@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  gap: 1rem; /* Espacio entre tarjetas */
+  padding: 1rem;
+}
+.card {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+
+.title{
+  color: black;
+}

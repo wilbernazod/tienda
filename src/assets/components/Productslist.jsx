@@ -1,5 +1,6 @@
 import usefetchProducts from "../../hooks/usefetchProducts";
 import React from 'react'
+import ProductCard from "./ProductCard";
 
 const Productslist = () => {
     const {data: products,loading,error} = usefetchProducts("https://fakestoreapi.com/products");
@@ -15,18 +16,11 @@ const Productslist = () => {
         )
     }
   return (
-    <div>
-        {products.map((product)=>{
-           return (
-            <div key={product.id}>
-                <p>{product.title}</p>
-                <img src={product.image} alt="" />
-                <p>{product.category}</p>
-            </div>
-           )
-        })}
-    </div>
+    <ProductCard/>
   )
 }
 
 export default Productslist
+
+//Crear un componente que se llame ProductCard.jsx
+//Este componente recibe cada producto y lo muestra en una tarjeta
