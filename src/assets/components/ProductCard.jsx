@@ -20,5 +20,7 @@ const ProductCard = () => {
 </div>
   )
 }
+//Profe los estilos los busque en google que mis estilos eran muy feos y mejor decidi buscar mejores estilos
+//todo lo demas yo lo hice solo los estilos fueron buscados en google
 
 export default ProductCard
